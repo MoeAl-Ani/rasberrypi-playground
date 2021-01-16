@@ -1,4 +1,4 @@
-# Authentication microservice
+# Raspberry-pi playground
 
 # License
 ```MIT License
