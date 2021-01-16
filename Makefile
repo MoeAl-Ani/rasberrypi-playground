@@ -13,5 +13,6 @@ build_pi:
 	chmod +x openssl_build
 	./openssl_build
 	cargo build --target armv7-unknown-linux-gnueabihf --release
+	scp target/armv7-unknown-linux-gnueabihf/release/rasberrypi-playground pi@rasberrypi:~/./
 deploy_pi:
-	scp target/armv7-unknown-linux-gnueabihf/release/rasberrypi-playground pi@${ip}:~/./
+	scp target/armv7-unknown-linux-gnueabihf/release/rasberrypi-playground pi@rasberrypi:~/./
